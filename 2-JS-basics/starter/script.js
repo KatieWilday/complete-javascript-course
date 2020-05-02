@@ -36,11 +36,15 @@ if (civilStatus === 'married') {
 //Falsy values = undefined, null, 0, "", NaN
 //Truthy: NOT falsy values
 
-var height;
+var height = 23
 
-if (height){
+if (height || height === 0){ //== datatypes of both variable don't have to match
   console.log("variable is defined")
 }
 else {
   console.log("variable has NOT been defined")
+}
+
+if (height == '23') {
+  console.log("the == operator does type coercion")
 }
