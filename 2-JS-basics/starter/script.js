@@ -35,10 +35,10 @@ if (civilStatus === 'married') {
 //Truthey and Falsy values
 //Falsy values = undefined, null, 0, "", NaN
 //Truthy: NOT falsy values
-
+/*
 var height = 23
 
-if (height || height === 0){ //== datatypes of both variable don't have to match
+if (height || height === 0){ //=== strict, == datatypes of both variable don't have to match
   console.log("variable is defined")
 }
 else {
@@ -48,3 +48,11 @@ else {
 if (height == '23') {
   console.log("the == operator does type coercion")
 }
+
+*/
+
+//Coding CHALLENGE
+
+var scoreJohn = (189 + 120 + 103) / 3;
+var scoreMike = (129 + 94 + 123) / 3;
+var scoreMary = (97 + 134 + 105) / 3;
