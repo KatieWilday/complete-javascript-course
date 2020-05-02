@@ -133,7 +133,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 1. Store Mark's and John's mass and height in variables
 2. Calculate both their BMIs
 3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
-4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
+4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true").
 
 GOOD LUCK 😀
 */
@@ -221,24 +221,25 @@ var firstName = 'John';
 var age = 14;
 
 // Ternary operator
-age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
+age >= 21 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
 
 var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
-(if (age >= 18) {
+/*if (age >= 18) {
     var drink = 'beer';
 } else {
     var drink = 'juice';
 }
-
-// Switch statement
-var job = 'instructor';
+*/
+/*
+// Switch statement - if else with multiple if else clauses
+var job = 'driver';
 switch (job) {
     case 'teacher':
     case 'instructor':
         console.log(firstName + ' teaches kids how to code.');
-        break;
+        break; //if true will stop evaluating
     case 'driver':
         console.log(firstName + ' drives an uber in Lisbon.');
         break;
@@ -264,7 +265,6 @@ switch (true) {
         console.log(firstName + ' is a man.');
 }
 */
-
 
 
 /*****************************
@@ -353,13 +353,13 @@ console.log(ageJohn, ageMike, ageJane);
 function yearsUntilRetirement(year, firstName) {
     var age = calculateAge(year);
     var retirement = 65 - age;
-    
+
     if (retirement > 0) {
         console.log(firstName + ' retires in ' + retirement + ' years.');
     } else {
         console.log(firstName + ' is already retired.')
     }
-    
+
 }
 
 yearsUntilRetirement(1990, 'John');
@@ -664,12 +664,12 @@ var john = {
     calcTips: function() {
         this.tips = [];
         this.finalValues = [];
-                
+
         for (var i = 0; i < this.bills.length; i++) {
             // Determine percentage based on tipping rules
             var percentage;
             var bill = this.bills[i];
-            
+
             if (bill < 50) {
                 percentage = .2;
             } else if (bill >= 50 && bill < 200) {
@@ -677,7 +677,7 @@ var john = {
             } else {
                 percentage = .1;
             }
-            
+
             // Add results to the corresponing arrays
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + bill * percentage;
@@ -691,12 +691,12 @@ var mark = {
     calcTips: function() {
         this.tips = [];
         this.finalValues = [];
-                
+
         for (var i = 0; i < this.bills.length; i++) {
             // Determine percentage based on tipping rules
             var percentage;
             var bill = this.bills[i];
-            
+
             if (bill < 100) {
                 percentage = .2;
             } else if (bill >= 100 && bill < 300) {
@@ -704,7 +704,7 @@ var mark = {
             } else {
                 percentage = .25;
             }
-            
+
             // Add results to the corresponing arrays
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + bill * percentage;
