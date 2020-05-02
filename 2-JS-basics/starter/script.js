@@ -21,7 +21,7 @@ var bmiJohn = massJohn / (heightJohn * heightJohn);
 var markHigherBMI = bmiMark > bmiJohn;
 console.log('Is Mark\'s BMI heigher than John\'s?' + markHigherBMI)
 */
-
+/*
 var firstName = 'John'
 var civilStatus = 'single'
 
@@ -30,5 +30,17 @@ if (civilStatus === 'married') {
 } else {
   console.log(firstName + ' is not married!')
 }
+*/
 
-//Truthey and Falsey values
+//Truthey and Falsy values
+//Falsy values = undefined, null, 0, "", NaN
+//Truthy: NOT falsy values
+
+var height;
+
+if (height){
+  console.log("variable is defined")
+}
+else {
+  console.log("variable has NOT been defined")
+}
